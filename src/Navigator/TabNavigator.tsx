@@ -3,7 +3,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {useNavigation} from '@react-navigation/native';
 import Customer from '../screens/Customer';
 import Orders from '../screens/Orders';
-import {TabStackParamList} from '../../type';
+import {TabStackParamList} from '../types/type';
 import {Icon} from '@rneui/themed';
 
 const TabStack = createBottomTabNavigator<TabStackParamList>();
@@ -28,7 +28,7 @@ const TabNavigator = () => {
               <Icon
                 name="users"
                 type="entypo"
-                color={focused ? '#59C1CC' : 'gray'}
+                color={focused ? '#517fa4' : 'gray'}
               />
             );
           } else if (route.name === 'Orders') {
@@ -36,7 +36,7 @@ const TabNavigator = () => {
               <Icon
                 name="box"
                 type="entypo"
-                color={focused ? '#59C1CC' : 'gray'}
+                color={focused ? '#eb1006bc' : 'gray'}
               />
             );
           }
